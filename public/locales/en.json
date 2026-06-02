@@ -23,6 +23,10 @@
   "experience": {
     "title": "Professional Experience"
   },
+  "game": {
+    "title": "Interactive Terminal",
+    "description": "Play a game of Snake while checking out my profile. Use arrow keys or click here to start."
+  },
   "footer": {
     "text": "Designed and developed by Dangelo Aguilar."
   }

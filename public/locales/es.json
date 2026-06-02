@@ -23,6 +23,10 @@
   "experience": {
     "title": "Experiencia Profesional"
   },
+  "game": {
+    "title": "Terminal Interactiva",
+    "description": "Juega una partida de Snake mientras revisas mi perfil. Usa las flechas del teclado o presiona aquí para empezar."
+  },
   "footer": {
     "text": "Diseñado y desarrollado por Dangelo Aguilar."
   }

@@ -4,7 +4,7 @@
 
 ### **PERFIL PROFESIONAL**
 
-Senior Full Stack Engineer con 5 años de experiencia diseñando y desarrollando aplicaciones escalables y arquitecturas de software robustas. Especialista en el ecosistema **.NET** (C\#) y **Angular**, junto con tecnologías como Node.js, Flutter y la administración de bases de datos relacionales (Oracle, SQL Server). Destaco por mi capacidad para automatizar procesos de negocio, modernizar sistemas legacy y aplicar principios de Clean Architecture y patrones de diseño sólidos (SOLID, Repository) para entregar soluciones eficientes y de alto valor. Profesional autodidacta, comunicativo y orientado al trabajo en equipo.
+Senior Full Stack Engineer con 6 años de experiencia diseñando y desarrollando aplicaciones escalables y arquitecturas de software robustas. Especialista en el ecosistema **.NET** (C\#) y **Angular**, junto con tecnologías como Node.js, Flutter y la administración de bases de datos relacionales (Oracle, SQL Server). Destaco por mi capacidad para automatizar procesos de negocio, modernizar sistemas legacy y aplicar principios de Clean Architecture y patrones de diseño sólidos (SOLID, Repository) para entregar soluciones eficientes y de alto valor. Profesional autodidacta, comunicativo y orientado al trabajo en equipo.
 
 ### **EXPERIENCIA PROFESIONAL**
 

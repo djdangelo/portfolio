@@ -1,20 +1,30 @@
 import './style.css';
 import { I18nManager } from './core/I18nManager';
 import { publicProjects, privateProjects, type Project } from './data/projects';
+import { SnakeGame } from './core/SnakeGame';
 
-// Initialize I18n
 const i18n = new I18nManager();
 
 async function initApp() {
   await i18n.init();
   setupLanguageSwitcher();
   renderProjects();
+  updateCVLink();
+  
+  new SnakeGame('snake-canvas');
 
-  // Listen for locale changes to re-render dynamic content if needed
   window.addEventListener('localeChanged', () => {
     renderProjects();
     updateActiveLanguageButton();
+    updateCVLink();
   });
+}
+
+function updateCVLink() {
+  const cvBtn = document.getElementById('cv-btn') as HTMLAnchorElement;
+  if (cvBtn) {
+    cvBtn.href = i18n.getLocale() === 'en' ? 'cv_en.pdf' : 'cv_es.pdf';
+  }
 }
 
 function updateActiveLanguageButton() {
@@ -83,5 +93,4 @@ function renderProjects() {
   }
 }
 
-// Start application
 initApp();

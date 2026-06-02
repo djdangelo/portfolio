@@ -7,7 +7,6 @@ export class I18nManager {
     if (savedLocale) {
       this.currentLocale = savedLocale;
     } else {
-      // Auto-detect browser language or fallback to es
       const browserLang = navigator.language.split('-')[0];
       this.currentLocale = browserLang === 'en' ? 'en' : 'es';
     }
@@ -25,7 +24,6 @@ export class I18nManager {
     await this.loadTranslations(locale);
     this.updateDOM();
     
-    // Dispatch custom event for other components that might need to re-render
     window.dispatchEvent(new CustomEvent('localeChanged', { detail: { locale } }));
   }
 
@@ -38,7 +36,7 @@ export class I18nManager {
     let value: any = this.translations;
     for (const k of keys) {
       if (value[k] === undefined) {
-        return key; // Fallback to key if not found
+        return key;
       }
       value = value[k];
     }

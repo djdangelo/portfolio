@@ -18,9 +18,9 @@
   <nav class="fixed top-0 w-full z-50 glass border-b border-white/5 py-4 transition-all">
     <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
       <div class="text-xl font-bold tracking-tighter text-gradient">DA.</div>
-      <div class="flex items-center gap-6">
-        <a href="#projects" class="text-sm font-medium hover:text-brand-accent transition-colors" data-i18n="nav.projects">Proyectos</a>
-        <a href="#experience" class="text-sm font-medium hover:text-brand-accent transition-colors" data-i18n="nav.experience">Experiencia</a>
+      <div class="flex items-center gap-3 sm:gap-6">
+        <a href="#projects" class="hidden sm:block text-xs sm:text-sm font-medium hover:text-brand-accent transition-colors" data-i18n="nav.projects">Proyectos</a>
+        <a href="#experience" class="hidden sm:block text-xs sm:text-sm font-medium hover:text-brand-accent transition-colors" data-i18n="nav.experience">Experiencia</a>
         <div class="flex bg-brand-dark/50 rounded-lg p-1 border border-white/10">
           <button id="btn-es" class="px-3 py-1 text-xs rounded-md transition-colors bg-brand-primary text-white font-medium">ES</button>
           <button id="btn-en" class="px-3 py-1 text-xs rounded-md transition-colors hover:text-brand-accent">EN</button>
@@ -34,19 +34,22 @@
     <section class="min-h-[75vh] flex flex-col md:flex-row items-center justify-between gap-12 animate-fade-in">
       <div class="flex-1 space-y-6">
         <p class="text-brand-accent font-medium tracking-wide" data-i18n="hero.greeting">Hola, soy</p>
-        <h1 class="text-5xl md:text-7xl font-bold tracking-tight text-white" data-i18n="hero.name">Dangelo Aguilar</h1>
-        <h2 class="text-2xl md:text-3xl text-brand-primary font-medium" data-i18n="hero.role">Senior Full Stack Engineer</h2>
+        <h1 class="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight text-white" data-i18n="hero.name">Dangelo Aguilar</h1>
+        <h2 class="text-xl sm:text-2xl md:text-3xl text-brand-primary font-medium" data-i18n="hero.role">Senior Full Stack Engineer</h2>
         <p class="text-gray-400 max-w-xl text-lg leading-relaxed" data-i18n="hero.description">
           Con 5 años de experiencia diseñando y desarrollando aplicaciones escalables y arquitecturas de software robustas. Especialista en .NET, Angular y Node.js. Apasionado por aplicar principios de Clean Architecture y patrones de diseño sólidos.
         </p>
-        <div class="flex gap-4 pt-4">
-          <a href="shared/cv.md" target="_blank" class="px-6 py-3 bg-brand-primary hover:bg-brand-primary/90 text-white rounded-lg font-medium transition-all hover:shadow-lg hover:shadow-brand-primary/30 hover:-translate-y-0.5" data-i18n="hero.cv_button">
-            Descargar CV
+        <div class="flex flex-wrap gap-4 pt-4">
+          <a id="cv-btn" href="cv_es.pdf" target="_blank" class="px-6 py-3 bg-brand-primary hover:bg-brand-primary/90 text-white rounded-lg font-medium transition-all hover:shadow-lg hover:shadow-brand-primary/30 hover:-translate-y-0.5 flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            <span data-i18n="hero.cv_button">Descargar CV</span>
           </a>
-          <a href="https://linkedin.com/in/dangelo-aguilar" target="_blank" class="px-6 py-3 glass hover:bg-white/10 text-white rounded-lg font-medium transition-all">
+          <a href="https://linkedin.com/in/dangelo-aguilar" target="_blank" class="px-6 py-3 glass hover:bg-white/10 text-white rounded-lg font-medium transition-all flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
             LinkedIn
           </a>
-          <a href="https://github.com/djdangelo" target="_blank" class="px-6 py-3 glass hover:bg-white/10 text-white rounded-lg font-medium transition-all">
+          <a href="https://github.com/djdangelo" target="_blank" class="px-6 py-3 glass hover:bg-white/10 text-white rounded-lg font-medium transition-all flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
             GitHub
           </a>
         </div>
@@ -77,6 +80,31 @@
         <!-- Injected via TS -->
       </div>
     </section>
+
+    <!-- Interactive Game Section -->
+    <section id="game" class="pt-24 animate-slide-up" style="animation-delay: 0.4s; opacity: 0;">
+      <h3 class="text-3xl font-bold text-white mb-6 flex items-center gap-4">
+        <span class="w-8 h-1 bg-brand-primary rounded-full"></span>
+        <span data-i18n="game.title">Terminal Interactiva</span>
+      </h3>
+      <div class="glass p-4 sm:p-8 rounded-2xl border-brand-accent/30 flex flex-col items-center w-full">
+        <p class="text-brand-accent mb-8 text-center max-w-lg text-sm sm:text-base" data-i18n="game.description">
+          Juega una partida de Snake mientras revisas mi perfil. Usa las flechas del teclado o presiona aquí para empezar.
+        </p>
+        <div class="relative bg-brand-dark rounded-xl border-2 border-brand-primary/50 overflow-hidden shadow-2xl shadow-brand-primary/20 w-full max-w-[400px]">
+          <!-- Terminal header -->
+          <div class="bg-brand-card px-4 py-2 flex items-center gap-2 border-b border-brand-primary/50">
+            <div class="w-3 h-3 rounded-full bg-red-500"></div>
+            <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+            <div class="w-3 h-3 rounded-full bg-green-500"></div>
+            <span class="ml-4 text-xs text-gray-400">snake.exe</span>
+          </div>
+          <!-- Canvas -->
+          <canvas id="snake-canvas" class="block cursor-pointer focus:outline-none w-full aspect-square" tabindex="0"></canvas>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="border-t border-white/10 mt-20 py-8 text-center text-gray-500 text-sm">

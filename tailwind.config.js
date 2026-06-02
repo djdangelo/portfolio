@@ -17,7 +17,7 @@ export default {
         }
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        sans: ['"Fira Code"', 'monospace'],
       },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-out',
