@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dangelo Aguilar - Senior Full Stack Engineer Portfolio" />
+  <title>Dangelo Aguilar | Portfolio</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body class="bg-brand-dark text-brand-light font-sans overflow-x-hidden">
+  <!-- Dynamic Background Effects -->
+  <div class="fixed inset-0 z-[-1] overflow-hidden pointer-events-none">
+    <div class="absolute top-[-10%] left-[-10%] w-96 h-96 bg-brand-primary/20 rounded-full blur-[120px]"></div>
+    <div class="absolute bottom-[-10%] right-[-10%] w-[30rem] h-[30rem] bg-brand-accent/20 rounded-full blur-[150px]"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full z-50 glass border-b border-white/5 py-4 transition-all">
+    <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
+      <div class="text-xl font-bold tracking-tighter text-gradient">DA.</div>
+      <div class="flex items-center gap-6">
+        <a href="#projects" class="text-sm font-medium hover:text-brand-accent transition-colors" data-i18n="nav.projects">Proyectos</a>
+        <a href="#experience" class="text-sm font-medium hover:text-brand-accent transition-colors" data-i18n="nav.experience">Experiencia</a>
+        <div class="flex bg-brand-dark/50 rounded-lg p-1 border border-white/10">
+          <button id="btn-es" class="px-3 py-1 text-xs rounded-md transition-colors bg-brand-primary text-white font-medium">ES</button>
+          <button id="btn-en" class="px-3 py-1 text-xs rounded-md transition-colors hover:text-brand-accent">EN</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="max-w-6xl mx-auto px-6 pt-32 pb-20">
+    <!-- Hero Section -->
+    <section class="min-h-[75vh] flex flex-col md:flex-row items-center justify-between gap-12 animate-fade-in">
+      <div class="flex-1 space-y-6">
+        <p class="text-brand-accent font-medium tracking-wide" data-i18n="hero.greeting">Hola, soy</p>
+        <h1 class="text-5xl md:text-7xl font-bold tracking-tight text-white" data-i18n="hero.name">Dangelo Aguilar</h1>
+        <h2 class="text-2xl md:text-3xl text-brand-primary font-medium" data-i18n="hero.role">Senior Full Stack Engineer</h2>
+        <p class="text-gray-400 max-w-xl text-lg leading-relaxed" data-i18n="hero.description">
+          Con 5 años de experiencia diseñando y desarrollando aplicaciones escalables y arquitecturas de software robustas. Especialista en .NET, Angular y Node.js. Apasionado por aplicar principios de Clean Architecture y patrones de diseño sólidos.
+        </p>
+        <div class="flex gap-4 pt-4">
+          <a href="shared/cv.md" target="_blank" class="px-6 py-3 bg-brand-primary hover:bg-brand-primary/90 text-white rounded-lg font-medium transition-all hover:shadow-lg hover:shadow-brand-primary/30 hover:-translate-y-0.5" data-i18n="hero.cv_button">
+            Descargar CV
+          </a>
+          <a href="https://linkedin.com/in/dangelo-aguilar" target="_blank" class="px-6 py-3 glass hover:bg-white/10 text-white rounded-lg font-medium transition-all">
+            LinkedIn
+          </a>
+          <a href="https://github.com/djdangelo" target="_blank" class="px-6 py-3 glass hover:bg-white/10 text-white rounded-lg font-medium transition-all">
+            GitHub
+          </a>
+        </div>
+      </div>
+      <div class="flex-1 flex justify-center md:justify-end relative">
+        <div class="absolute inset-0 bg-gradient-to-tr from-brand-accent to-brand-primary rounded-full blur-[80px] opacity-30"></div>
+        <img src="shared/profile.jpg" alt="Dangelo Aguilar" class="relative z-10 w-64 h-64 md:w-80 md:h-80 object-cover rounded-full border-4 border-white/10 shadow-2xl" onerror="this.src='https://via.placeholder.com/400x400?text=DA'" />
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="pt-24 animate-slide-up" style="animation-delay: 0.2s; opacity: 0;">
+      <h3 class="text-3xl font-bold text-white mb-12 flex items-center gap-4">
+        <span class="w-8 h-1 bg-brand-accent rounded-full"></span>
+        <span data-i18n="projects.title">Proyectos Destacados</span>
+      </h3>
+      
+      <h4 class="text-xl text-brand-primary mb-6" data-i18n="projects.public_title">Código Abierto</h4>
+      <div id="public-projects" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+        <!-- Injected via TS -->
+      </div>
+
+      <h4 class="text-xl text-brand-primary mb-6" data-i18n="projects.private_title">Proyectos Privados</h4>
+      <p class="text-gray-400 mb-8 text-sm max-w-2xl" data-i18n="projects.private_notice">
+        Nota: Estos proyectos son privados. Si deseas ver una demostración, por favor contáctame directamente.
+      </p>
+      <div id="private-projects" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Injected via TS -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/10 mt-20 py-8 text-center text-gray-500 text-sm">
+    <p data-i18n="footer.text">Diseñado y desarrollado por Dangelo Aguilar.</p>
+  </footer>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

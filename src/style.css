@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .glass {
+    @apply bg-brand-card/80 backdrop-blur-md border border-white/10 shadow-xl;
+  }
+  
+  .glass-hover {
+    @apply hover:bg-brand-card hover:border-brand-accent/50 transition-all duration-300 hover:-translate-y-1;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-accent to-brand-primary;
+  }
+}
+
+body {
+  @apply bg-brand-dark text-brand-light font-sans antialiased selection:bg-brand-accent/30 selection:text-white min-h-screen flex flex-col;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-brand-dark;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-brand-card rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-brand-primary/50;
+}

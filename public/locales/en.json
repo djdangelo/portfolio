@@ -1,0 +1,29 @@
+{
+  "nav": {
+    "projects": "Projects",
+    "experience": "Experience",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Dangelo Aguilar",
+    "role": "Senior Full Stack Engineer",
+    "description": "With 5 years of experience designing and developing scalable applications and robust software architectures. Specialist in .NET, Angular, and Node.js. Passionate about applying Clean Architecture principles and solid design patterns.",
+    "cv_button": "Download CV",
+    "contact_button": "Contact Me"
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "public_title": "Open Source",
+    "private_title": "Private Projects",
+    "view_repo": "View Repository",
+    "demo_request": "Request Demo",
+    "private_notice": "Note: These projects are private. If you wish to see a demonstration, please contact me directly."
+  },
+  "experience": {
+    "title": "Professional Experience"
+  },
+  "footer": {
+    "text": "Designed and developed by Dangelo Aguilar."
+  }
+}
